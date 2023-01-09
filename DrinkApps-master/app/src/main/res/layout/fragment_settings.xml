@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/settings"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.ui.SettingsFragment">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <CheckBox
+        android:id="@+id/cb_ordinary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_ordinary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/ordinary_drink"
+        app:layout_constraintBottom_toBottomOf="@+id/cb_ordinary"
+        app:layout_constraintStart_toEndOf="@id/cb_ordinary"
+        app:layout_constraintTop_toTopOf="@id/cb_ordinary" />
+
+    <CheckBox
+        android:id="@+id/cb_cocktail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cb_ordinary" />
+
+    <TextView
+        android:id="@+id/tv_cocktail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/cocktail"
+        app:layout_constraintBottom_toBottomOf="@+id/cb_cocktail"
+        app:layout_constraintStart_toEndOf="@id/cb_cocktail"
+        app:layout_constraintTop_toTopOf="@id/cb_cocktail" />
+
+    <CheckBox
+        android:id="@+id/cb_shake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cb_cocktail" />
+
+    <TextView
+        android:id="@+id/tv_shake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/shake"
+        app:layout_constraintBottom_toBottomOf="@+id/cb_shake"
+        app:layout_constraintStart_toEndOf="@id/cb_shake"
+        app:layout_constraintTop_toTopOf="@id/cb_shake" />
+
+    <CheckBox
+        android:id="@+id/cb_other"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cb_shake" />
+
+    <TextView
+        android:id="@+id/tv_other"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/other_unknown"
+        app:layout_constraintBottom_toBottomOf="@+id/cb_other"
+        app:layout_constraintStart_toEndOf="@id/cb_other"
+        app:layout_constraintTop_toTopOf="@id/cb_other" />
+
+    <CheckBox
+        android:id="@+id/cb_cocoa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cb_other" />
+
+    <TextView
+        android:id="@+id/tv_cocoa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/cocoa"
+        app:layout_constraintBottom_toBottomOf="@+id/cb_cocoa"
+        app:layout_constraintStart_toEndOf="@id/cb_cocoa"
+        app:layout_constraintTop_toTopOf="@id/cb_cocoa" />
+
+    <CheckBox
+        android:id="@+id/cb_shot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cb_cocoa" />
+
+    <TextView
+        android:id="@+id/tv_shot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/shot"
+        app:layout_constraintBottom_toBottomOf="@+id/cb_shot"
+        app:layout_constraintStart_toEndOf="@id/cb_shot"
+        app:layout_constraintTop_toTopOf="@id/cb_shot" />
+
+
+    <CheckBox
+        android:id="@+id/cb_coffee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cb_shot" />
+
+    <TextView
+        android:id="@+id/tv_coffee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/coffee_tea"
+        app:layout_constraintBottom_toBottomOf="@+id/cb_coffee"
+        app:layout_constraintStart_toEndOf="@id/cb_coffee"
+        app:layout_constraintTop_toTopOf="@id/cb_coffee" />
+
+    <CheckBox
+        android:id="@+id/cb_homemade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cb_coffee" />
+
+    <TextView
+        android:id="@+id/tv_homemade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/homemade_liqueur"
+        app:layout_constraintBottom_toBottomOf="@+id/cb_homemade"
+        app:layout_constraintStart_toEndOf="@id/cb_homemade"
+        app:layout_constraintTop_toTopOf="@id/cb_homemade" />
+
+    <CheckBox
+        android:id="@+id/cb_punch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cb_homemade" />
+
+    <TextView
+        android:id="@+id/tv_punch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/punch_party_drink"
+        app:layout_constraintBottom_toBottomOf="@+id/cb_punch"
+        app:layout_constraintStart_toEndOf="@id/cb_punch"
+        app:layout_constraintTop_toTopOf="@id/cb_punch" />
+
+    <CheckBox
+        android:id="@+id/cb_beer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cb_punch" />
+
+    <TextView
+        android:id="@+id/tv_beer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/beer"
+        app:layout_constraintBottom_toBottomOf="@+id/cb_beer"
+        app:layout_constraintStart_toEndOf="@id/cb_beer"
+        app:layout_constraintTop_toTopOf="@id/cb_beer" />
+
+    <CheckBox
+        android:id="@+id/cb_soft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cb_beer" />
+
+    <TextView
+        android:id="@+id/tv_soft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/soft_drink"
+        app:layout_constraintBottom_toBottomOf="@+id/cb_soft"
+        app:layout_constraintStart_toEndOf="@id/cb_soft"
+        app:layout_constraintTop_toTopOf="@id/cb_soft" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

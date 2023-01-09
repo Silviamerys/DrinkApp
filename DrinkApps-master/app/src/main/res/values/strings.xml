@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">DrinkApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="details">Details :</string>
+    <string name="ingredient">Ingredient :</string>
+    <string name="ordinary_drink">Ordinary Drink</string>
+    <string name="cocktail">Cocktail</string>
+    <string name="shake">Shake</string>
+    <string name="other_unknown">Other/Unknown</string>
+    <string name="cocoa">Cocoa</string>
+    <string name="shot">Shot</string>
+    <string name="coffee_tea">Coffee / Tea</string>
+    <string name="homemade_liqueur">Homemade Liqueur</string>
+    <string name="punch_party_drink">Punch / Party Drink</string>
+    <string name="beer">Beer</string>
+    <string name="soft_drink">Soft Drink</string>
+    <string name="enter_name_drinks">Enter name drinks</string>
+    <string name="category">Category</string>
+    <string name="history">History</string>
+    <string name="search">Search</string>
+    <string name="favorite">favorite</string>
+    <string name="settings">Settings</string>
+    <string name="instructions">Instructions</string>
+    <string name="drink_name">Drink name</string>
+</resources>
